@@ -1,0 +1,114 @@
+main {
+    margin-top: 30px;
+}
+
+h1 {
+    margin: 150px 0 70px 0;
+}
+
+#all-shoes-div {
+    border-radius: 10px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+.shoeDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 330px;
+    margin: 20px;
+    border: 4px double rgba(248, 248, 255, 0.048);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.085);
+    border-radius: 20%;
+}
+.shoeDetails > img {
+    width: 170px;
+    height: 130px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+p {
+    margin: 3px;
+}
+p > span {
+    color: rgba(245, 245, 245, 0.958);
+    font-weight: bolder;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+#addToFav {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+#addToFav:hover {
+    content: url("../images/add-to-favorites-icon-hover.png");
+}
+
+#removeFromFav {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+#removeFromFav:hover {
+    content: url("../images/remove-from-favorites-icon-hover.png");
+}
+
+.mainPageLink-searchBox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+a > img {
+    margin: 0 50px 0 60px;
+}
+
+.search-box {
+    margin-right: 15%;
+}
+.search-box>input {
+    width: 8.5rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    background-color: rgba(253, 247, 224, 0.39);
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        height: 13vh;
+    }
+
+    .mainPageLink-searchBox-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .search-box {
+        margin-left: 10%;
+    }
+    .search-box>input {
+        width: 7rem;
+        height: 1rem;
+    }
+
+    a > img {
+        margin: 6px 0;
+        width: 3rem;
+        height: 2.8rem;
+    }
+}

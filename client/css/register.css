@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 65vh;
+    border: 3px solid rgba(255, 240, 245, 0.227);
+    border-radius: 8px;
+}
+
+form > button {
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e6e1f2aa;
+    border: 2px double rgba(168, 168, 168, 0.927);
+    margin-top: 8px;
+}
+form > button:hover {
+    background-color: #67c0aee0;
+}
+
+main {
+    margin-top: 130px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+}

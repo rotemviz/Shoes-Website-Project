@@ -1,0 +1,58 @@
+main {
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline;
+}
+
+#all-favorites-div {
+    border-radius: 10px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    margin-top: 60px;
+}
+
+.favoriteDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 330px;
+    margin: 20px;
+    border: 4px double rgba(248, 248, 255, 0.048);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.085);
+    border-radius: 20%;
+}
+.favoriteDetails > img {
+    width: 170px;
+    height: 130px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+p {
+    margin: 3px;
+}
+p > span {
+    color: rgba(245, 245, 245, 0.958);
+    font-weight: bolder;
+}
+
+#removeFromFav {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+#removeFromFav:hover {
+    content: url("../images/remove-from-favorites-icon-hover.png");
+}

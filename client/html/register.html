@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoe Box - Register</title>
+    <link rel = "icon" type = "image/png" href = "../images/shoes-logo.png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <header>
+        <a href="../html/main.html"><img src="../images/shoes-logo.png"/></a>
+        <div class="navbar">
+            <div class="navOption" id="favorites">
+                <a href="./favorites.html">Favorites</a>
+            </div>
+            <div class="status-container">
+                <div id="userStatus"></div>
+                <a href="./login.html" data-user-logout>Logout</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>The Shoe Box</h1>
+        <form data-register-form>
+            <label for="username">Username:</label>
+            <input id="username" type="text" required>
+            <label for="email">Email:</label>
+            <input id="email" type="email" required>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName">
+            <label for="lastName">Last name:</label>
+            <input id="lastName" type="text">
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="1" max="120">
+            <label for="password">Password:</label>
+            <input id="password" type="password" required>
+            <label for="country">Country:</label>
+            <input id="country" type="text">
+            <label for="city">City:</label>
+            <input id="city" type="text">
+            <label for="street">Street:</label>
+            <input id="street" type="text">
+            <label for="zipCode">Zip Code:</label>
+            <input id="zipCode" type="number">
+            <button type="submit">Register</button>
+            <a href="login.html">Already have an account? Click here</a>
+            <p data-register-msg></p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2022 Rotem Vizenblit</p>
+    </footer>
+</body>
+<script src="../js/auth.js"></script>
+<script src="../js/register.js"></script>
+</html>

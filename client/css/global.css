@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1289a786;
+}
+
+header {
+    height: 10.2vh;
+    width: 100%;
+    background-color: rgba(205, 215, 219, 0.716);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px double rgba(248, 248, 255, 0.67);
+    position: fixed;
+    top: 0;
+}
+
+a > img {
+    width: 3.5rem;
+    height: 3.3rem;
+    margin: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 90%;
+    color: #073743f5;
+}
+a:hover {
+    color: rgb(241, 255, 250);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(216, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px double rgb(126, 238, 201);
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+header > div {
+    margin: 0.2% 1.3% 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#userStatus{
+    padding: 6px;
+}
+
+hr {
+    height: 1.3px;
+    margin: 5px 0;
+}
+
+.navbar {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px double rgba(248, 248, 255, 0.571);
+    border-radius: 5px;
+    padding: 0 1rem;
+    height: 1.8rem;
+    margin-right: 13%;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        height: 11vh;
+    }
+
+    .navbar {
+        margin-right: 15px;
+    }
+
+    .navOption {
+        width: 50px;
+    }
+
+    #userStatus{
+        padding: 4px;
+    }
+
+    a > img {
+        width: 3rem;
+        height: 2.8rem;
+        margin: 40px;
+    }
+}

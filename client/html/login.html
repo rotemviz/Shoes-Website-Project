@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoe Box - Login</title>
+    <link rel = "icon" type = "image/png" href = "../images/shoes-logo.png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header>
+        <a href="../html/main.html"><img src="../images/shoes-logo.png"/></a>
+        <div class="navbar">
+            <div class="navOption" id="favorites">
+                <a href="./favorites.html">Favorites</a>
+            </div>
+            <div class="status-container">
+                <div id="userStatus"></div>
+                <a href="./login.html" data-user-logout>Logout</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>The Shoe Box</h1>
+        <form data-login-form>
+            <label for="username">Username:</label>
+            <input id="username" type="text" required>
+            <label for="password">Password:</label>
+            <input id="password" type="password" required>
+            <div class="show-pass-div">
+                <label for="showPassword">Show Password</label>
+                <input type="checkbox" id="showPassword">
+            </div>
+            <button type="submit">Login</button>
+            <a href="register.html">Don't have an account? Click here</a>
+            <p data-login-msg></p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2022 Rotem Vizenblit</p>
+    </footer>
+</body>
+<script src="../js/auth.js"></script>
+<script src="../js/login.js"></script>
+</html>
